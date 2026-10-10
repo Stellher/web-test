@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#dfe9f7" />
+  <meta name="description" content="Sparkle 在线下载与导航。以 iOS Liquid Glass 液态折射与玻璃设计重新定义资源发现体验。" />
+  <meta property="og:title" content="Sparkle — 让每一次发现，都有光" />
+  <meta property="og:description" content="Sparkle Liquid Glass：折射、色散与动态玻璃交互预览。" />
+  <title>Sparkle — 让每一次发现，都有光</title>
+  <link rel="icon" type="image/svg+xml" href="assets/sparkle.svg" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/liquid.css" />
+  <script src="js/app.js" defer></script>
+  <script src="js/liquid.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳转到主要内容</a>
+  <div class="site-glow" aria-hidden="true"><i class="orb orb-one"></i><i class="orb orb-two"></i><i class="orb orb-three"></i><i class="orb orb-four"></i></div>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <div class="nav-shell glass-outline container">
+      <a class="brand" href="#top" aria-label="Sparkle 首页">
+        <span class="brand-mark"><img src="assets/sparkle.svg" alt="" width="26" height="26" /></span>
+        <span>Sparkle<span class="brand-period">.</span></span>
+      </a>
+      <nav class="desktop-nav" aria-label="主导航">
+        <a class="nav-link active" href="#top">首页</a>
+        <a class="nav-link" href="#discover">探索资源</a>
+        <a class="nav-link" href="#features">设计亮点</a>
+        <a class="nav-link" href="#about">关于 Sparkle</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button header-search" type="button" id="openSearch" aria-label="搜索资源" title="搜索资源（Ctrl/⌘ + K）">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.2 4.2"/></svg>
+        </button>
+        <button class="icon-button theme-button" type="button" id="themeToggle" aria-label="切换浅色模式" title="切换主题">
+          <svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.4A8.5 8.5 0 0 1 8.6 4a8.5 8.5 0 1 0 11.4 11.4Z"/></svg>
+          <svg class="theme-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+        </button>
+        <a class="header-cta" href="#discover">开始探索 <span aria-hidden="true">↗</span></a>
+        <button class="icon-button mobile-menu-button" type="button" id="menuToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="打开导航菜单">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav glass-outline container" id="mobileNav" aria-label="手机导航" hidden>
+      <a href="#top">首页</a><a href="#discover">探索资源</a><a href="#features">设计亮点</a><a href="#about">关于 Sparkle</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy" data-reveal>
+        <div class="eyebrow"><span class="eyebrow-star">✦</span> THE FUTURE FEELS CLEAR <span class="eyebrow-line"></span> LIQUID GLASS · 2026</div>
+        <h1 id="hero-title">让每一次发现，<br/>都像<span class="text-gradient">触碰光。</span></h1>
+        <p class="hero-description">真实的玻璃折射，轻盈的交互层次。<br/>全新 <strong>Sparkle</strong> 资源探索空间，让好应用与新灵感自然浮现。</p>
+        <div class="hero-buttons">
+          <a href="#discover" class="button button-primary">进入探索空间 <span class="button-arrow">↗</span></a>
+          <a href="https://stobox.dpdns.org/" target="_blank" rel="noopener noreferrer" class="button button-secondary"><span class="play-icon">↗</span> 当前官网</a>
+        </div>
+        <div class="hero-benefits"><span><span class="small-star">✧</span> 真实折射</span><span><span class="small-star">✧</span> 动态光感</span><span><span class="small-star">✧</span> 丝滑交互</span></div>
+      </div>
+      <div class="hero-art" id="heroArt" data-reveal aria-label="Sparkle iOS Liquid Glass 交互式玻璃设计演示">
+        <div class="glass-playground" id="glassPlayground">
+          <div class="scene-atmosphere" aria-hidden="true"></div>
+          <div class="scene-orb scene-orb-a" aria-hidden="true"></div>
+          <div class="scene-orb scene-orb-b" aria-hidden="true"></div>
+          <div class="scene-ribbon scene-ribbon-a" aria-hidden="true"></div>
+          <div class="scene-ribbon scene-ribbon-b" aria-hidden="true"></div>
+          <div class="scene-ribbon scene-ribbon-c" aria-hidden="true"></div>
+          <div class="scene-grid" aria-hidden="true"></div>
+
+          <div class="glass-floating glass-demo-label" data-liquid>
+            <span class="live-bubble"></span><span>INTERACTIVE GLASS</span><span class="label-twinkle">✳</span>
+          </div>
+          <div class="glass-floating glass-main-sheet" data-liquid>
+            <div class="glass-sheet-top"><span class="sheet-icon">✳</span><span>SPARKLE / DISCOVER</span><span>•••</span></div>
+            <p class="sheet-kicker">A SPACE FOR BETTER IDEAS</p>
+            <h2>Explore the<br/><em>extraordinary.</em></h2>
+            <p class="sheet-caption">好的创意，值得一种更好的打开方式。</p>
+            <button type="button" class="sheet-search" id="previewSearch"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.2 4.2"/></svg><span>搜索工具与资源</span><span>⌘ K</span></button>
+            <div class="glass-sheet-mini"><span class="mini-thumb">✦</span><div><strong>为灵感而来</strong><small>SELECTED FOR YOU</small></div><span class="mini-arrow">↗</span></div>
+          </div>
+          <div class="glass-floating glass-status-card" data-liquid>
+            <div class="status-symbol">◈</div><div><strong>找到你的灵感</strong><small>New ideas everyday</small></div><span class="status-wave">↗</span>
+          </div>
+          <div class="glass-floating glass-float-round" data-liquid aria-hidden="true">✦</div>
+          <div class="playground-controls" aria-label="玻璃效果控制面板">
+            <span>LIQUID LAB <span class="control-led"></span></span>
+            <label for="glassStrength">折射 <output id="glassValue">36</output></label>
+            <input id="glassStrength" type="range" min="12" max="65" value="36" aria-label="折射强度" />
+            <button id="glassSceneToggle" type="button" aria-label="切换玻璃背景颜色" title="切换背景">◐</button>
+          </div>
+        </div>
+        <div class="art-caption"><span class="caption-dot"></span> ACTUAL GLASS REFRACTION <span class="caption-sep">/</span> MOVE YOUR CURSOR</div>
+      </div>
+      <a href="#features" class="scroll-note" aria-label="向下查看内容"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <div class="section-rule container"><span>EVERYTHING YOU NEED, BEAUTIFULLY CONNECTED</span><span>✦</span></div>
+
+    <section class="features-section container section-space" id="features" aria-labelledby="features-title">
+      <div class="section-heading" data-reveal><span class="kicker"><span class="kicker-dot"></span> MADE TO INSPIRE</span><h2 id="features-title">不止于发现，<br/><span class="soft-text">更让体验闪闪发光。</span></h2><p>让功能像光一样，自然落在你需要的地方。折射玻璃承载操作，内容保持清晰。</p></div>
+      <div class="feature-grid">
+        <article class="feature-card glass-panel feature-large" data-reveal><span class="feature-index">01 / EFFORTLESS</span><div class="feature-illustration stacked-tiles" aria-hidden="true"><i class="tile tile-back"></i><i class="tile tile-middle"></i><i class="tile tile-front"><span>⌘</span><b>Discover</b><small>Find what matters.</small></i></div><div class="feature-text"><span class="feature-emoji">✧</span><h3>让探索，自然而然</h3><p>应用与工具按场景分类。所需内容近在眼前，少一些跳转，多一点专注。</p></div></article>
+        <article class="feature-card glass-panel" data-reveal><span class="feature-index">02 / INSTANT</span><div class="feature-illustration search-illustration" aria-hidden="true"><div class="search-line"><span>⌕</span><b>spark your workflow</b><i></i></div><div class="search-highlight"><span>✦</span> 已找到匹配资源 <strong>↗</strong></div></div><div class="feature-text"><span class="feature-emoji">↗</span><h3>想要的，快速直达</h3><p>支持名称、描述与分类搜索，减少寻找优质工具的时间。</p></div></article>
+        <article class="feature-card glass-panel" data-reveal><span class="feature-index">03 / YOUR WAY</span><div class="feature-illustration icon-constellation" aria-hidden="true"><span class="constellation constellation-a">◇</span><span class="constellation constellation-b">✳</span><span class="constellation constellation-c">⌘</span><span class="constellation constellation-d">◈</span><span class="constellation-center">✦</span></div><div class="feature-text"><span class="feature-emoji">♡</span><h3>收藏每一份灵感</h3><p>把喜欢的工具留在浏览器中，下次打开，灵感依然在这里。</p></div></article>
+      </div>
+    </section>
+
+    <section class="discover-section section-space" id="discover" aria-labelledby="discover-title">
+      <div class="container">
+        <div class="discover-header" data-reveal><div><span class="kicker"><span class="kicker-dot"></span> THE CURATED COLLECTION</span><h2 id="discover-title">灵感资源库<span class="title-spark">✳</span></h2><p>发现值得体验的数字工具。以下为设计预览中的精选示例，链接指向各产品官网。</p></div><button type="button" class="button button-secondary search-all" id="discoverSearch"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.2 4.2"/></svg> 搜索全部资源</button></div>
+        <div class="catalogue glass-outline" data-reveal>
+          <div class="catalogue-toolbar"><div class="category-tabs" id="categoryTabs" role="group" aria-label="资源分类"></div><button class="favorites-filter" id="favoritesOnly" aria-pressed="false" type="button"><span>♡</span> 我的收藏</button></div>
+          <div class="resource-grid" id="resourceGrid" aria-live="polite"></div>
+          <div class="catalogue-footer"><span id="resourceCount">正在加载资源…</span><button class="view-more" id="viewMore" type="button">显示更多 <span>↓</span></button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="philosophy-section container section-space" id="about" aria-labelledby="philosophy-title">
+      <div class="philosophy-panel glass-panel" data-reveal>
+        <div class="philosophy-copy"><span class="kicker"><span class="kicker-dot"></span> THE IDEA BEHIND SPARKLE</span><h2 id="philosophy-title">给数字生活，<br/><span class="text-gradient">多一点想象力。</span></h2><p>Sparkle 的初衷很简单：把有价值的软件、内容与灵感放在更容易触达的地方。这是一个参考 Liquid Glass React 的视觉和折射技术重新设计的站点预览。</p><a href="https://stobox.dpdns.org/" target="_blank" rel="noopener noreferrer" class="text-link">访问原有 Sparkle 站点 <span>↗</span></a></div>
+        <div class="philosophy-art" aria-hidden="true"><div class="halo halo-1"></div><div class="halo halo-2"></div><div class="halo halo-3"></div><div class="hero-gem">✦</div><span class="halo-caption halo-caption-1">CREATE</span><span class="halo-caption halo-caption-2">EXPLORE</span><span class="halo-caption halo-caption-3">INSPIRE</span></div>
+      </div>
+    </section>
+
+    <section class="faq-section container section-space" id="faq" aria-labelledby="faq-title"><div class="faq-heading"><span class="kicker"><span class="kicker-dot"></span> GOOD TO KNOW</span><h2 id="faq-title">关于这次焕新</h2></div><div class="faq-list"><details class="glass-outline"><summary>这是 Sparkle 正式上线的新网站吗？<span>+</span></summary><p>不是。这是根据现有 Sparkle 站点定位制作的 Liquid Glass 前端视觉与交互预览，并未修改生产网站，也尚未接入正式后台 API。</p></details><details class="glass-outline"><summary>页面里的应用和资源链接可以使用吗？<span>+</span></summary><p>可以。资源库采用演示精选内容，链接指向产品官方站点。它们并不代表原站实际收录的应用清单。</p></details><details class="glass-outline"><summary>我的收藏保存在哪里？<span>+</span></summary><p>收藏保存在当前浏览器的 localStorage 中，不会上传到服务器。清除浏览器站点数据后会重置。</p></details></div></section>
+  </main>
+
+  <footer class="footer container"><div class="footer-top"><div><a href="#top" class="brand footer-brand"><span class="brand-mark"><img src="assets/sparkle.svg" width="24" height="24" alt="" /></span><span>Sparkle<span class="brand-period">.</span></span></a><p>让每一次发现，都有光。</p></div><nav aria-label="页脚导航"><a href="#top">回到顶部</a><a href="#discover">探索资源</a><a href="#features">设计亮点</a><a href="https://stobox.dpdns.org/" target="_blank" rel="noopener noreferrer">正式站点 ↗</a></nav></div><div class="footer-bottom"><span>© <span id="year"></span> Sparkle · Liquid Glass concept preview</span><span>DESIGNED WITH LIGHT & CURIOSITY <span class="footer-star">✦</span></span></div></footer>
+
+  <dialog id="searchDialog" class="search-dialog" aria-labelledby="dialogTitle"><div class="dialog-head"><span class="dialog-icon">⌕</span><label class="sr-only" id="dialogTitle" for="globalSearchInput">搜索 Sparkle 资源</label><input id="globalSearchInput" type="search" placeholder="搜索名称、工具类型或关键词…" autocomplete="off" /><button type="button" class="dialog-esc" id="closeSearch">ESC</button></div><div class="dialog-hint">精选资源 <span>↑ ↓ 导航 · ENTER 打开</span></div><div id="searchResults" class="search-results" role="listbox" aria-label="搜索结果"></div><div class="dialog-foot"><span>✦ SPARKLE SEARCH</span><span>本地即时搜索</span></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
